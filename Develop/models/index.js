@@ -7,14 +7,14 @@ const ProductTag = require('./ProductTag');
 //product belongs to category
 Product.belongsTo(Category, {
    //referencing the primary key of category
-  foreignKey: 'category_id',
-  onDelete: 'CASCADE'
-})
+  foreignKey: 'product_id',
+  onDelete: 'CASCADE',
+});
 
 //product is allowed to have multiple categories
 Category.hasMany(Product, {
   foreignKey: 'product_id',
-  onDelete: 'CASCADE'
+  onDelete: 'CASCADE',
 });
 
 // this junction connects 2 models together, product belongs to tag and has multiple tags
@@ -23,7 +23,7 @@ Product.belongsToMany(Tag, {
     model: ProductTag,
     unique: false
   },
-  as: 'producttag'
+  as: 'tag'
 });
 // tag belongs to product and has many 
 Tag.belongsToMany(Product, {
@@ -31,7 +31,7 @@ Tag.belongsToMany(Product, {
     model: ProductTag,
     unique: false
   },
-  as: 'producttag'
+  as: 'product'
 });
 
 module.exports = {
