@@ -2,7 +2,7 @@
 challenge 13
 
 ## Description
-none
+For this project we wanted to create edit existing code to get the backend up todate. For this we wanted to be able to connect to a database. Pull information from the database and access it through a url. We wanted to be able to add, edit, and delete information. We built this using debeaver and postman. 
 
 ## Table of Contents
 * [Installation](#installation)
@@ -13,16 +13,16 @@ none
 * [Questions](#questions)
 
 ## Installation
-none
+npm i to install dotenv, express, mysql2, and sequelize. 
 
 ## Usage
 
 A link to the webpage is provided here: [Webpage](https://github.com/sweetkloid/e-commerce)
 
-![Screenshot]()
+![Demo](demo/demoecommerce.avi)
 
 ## Contributing
-none
+Thanks to the instructor, TA's, and classmates!
 
 ## Tests
 none
